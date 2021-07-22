@@ -37,9 +37,13 @@ body {
 }
 .contents {
   position: absolute;
-  top: 0;
+  top: 50%;
+  left: 50%;
+  margin-left: -198.7065px; /*내용(content) 너비의 절반을 빼준다(397.413px)*/
+  margin-top: -104.5px; /*내용(content) 높이의 절반을 빼준다(209px)*/
   z-index: 20;
   text-align: center;
+  font-family: "Maldun Gothic", sans-serif;
 }
 .name {
   font-size: 64px;
@@ -60,7 +64,15 @@ body {
   display: inline-block;
   width: 52px;
   height: 52px;
+  line-height: 52px;
   border: 1px solid white;
   border-radius: 50%;
   font-size: 16px;
+  margin-right: 20px;
+}
+.list > li:last-child {
+  margin-right: 0;
+}
+.list li > a {
+  color: white;
 }
